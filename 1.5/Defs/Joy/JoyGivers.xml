@@ -8,6 +8,10 @@
     <baseChance>4.5</baseChance>
     <thingDefs>
       <li>DustFootballPitch</li>
+      <li>SandFootballPitch</li>
+      <li>ConcreteFootballPitch</li>
+      <li>WoodFootballPitch</li>
+      <li>GrassFootballPitch</li>
     </thingDefs>
     <jobDef>Practice_Football</jobDef>
     <desireSit>false</desireSit>
