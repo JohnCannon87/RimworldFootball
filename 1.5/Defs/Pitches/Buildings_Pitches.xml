@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Abstract="True" Name="AbstractFootballPitch" ParentName="BuildingBase">
+        <defName>AbstractFootballPitch</defName>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.35</fillPercent>
+        <size>(13,7)</size>
+        <building>
+            <joyKind>Gaming_Football</joyKind>
+            <multiSittable>true</multiSittable>
+        </building>
+        <designationCategory>Joy</designationCategory>
+        <comps>
+            <li Class="Rimball.CompProperties_SportPitch">
+                <soundDefName>PlayFootballKick</soundDefName>
+                <potentialTraits>
+                    <li>
+                        <traitDefName>SpeedOffset</traitDefName>
+                        <degree>2</degree>
+                    </li>
+                </potentialTraits>
+                <sideACoords>
+                    <li>
+                        <x>0</x>
+                        <z>3</z>
+                    </li>
+                    <li>
+                        <x>2</x>
+                        <z>3</z>
+                    </li>
+                    <li>
+                        <x>3</x>
+                        <z>1</z>
+                    </li>
+                    <li>
+                        <x>3</x>
+                        <z>5</z>
+                    </li>
+                    <li>
+                        <x>5</x>
+                        <z>3</z>
+                    </li>
+                </sideACoords>
+                <sideBCoords>
+                    <li>
+                        <x>12</x>
+                        <z>3</z>
+                    </li>
+                    <li>
+                        <x>10</x>
+                        <z>3</z>
+                    </li>
+                    <li>
+                        <x>9</x>
+                        <z>1</z>
+                    </li>
+                    <li>
+                        <x>9</x>
+                        <z>5</z>
+                    </li>
+                    <li>
+                        <x>7</x>
+                        <z>3</z>
+                    </li>
+                </sideBCoords>
+            </li>
+        </comps>
+        <clearBuildingArea>true</clearBuildingArea>
+    </ThingDef>
+
+    <ThingDef ParentName="AbstractFootballPitch">
+        <defName>DustFootballPitch</defName>
+        <label>Dust Football Pitch</label>
+        <description>Jumpers for goal posts, generations of ancient earth children grew up with this in footballs home of England before government cut backs removed all public spaces.</description>
+        <graphicData>
+            <texPath>Things/DustFootballPitch</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(13,7)</drawSize>
+            <color>(1.0, 1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <uiIconPath>UI/DustFootballPitch_UI</uiIconPath>
+        <costList>
+            <Cloth>100</Cloth>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <Mass>8</Mass>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="AbstractFootballPitch">
+        <defName>SandFootballPitch</defName>
+        <label>Sand Football Pitch</label>
+        <description>Joga Bonito ! This ancient earth phrase has been lost to time but comes from a legendary footballing country that would train on sand from a young age.</description>
+        <graphicData>
+            <texPath>Things/SandFootballPitch</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(13,7)</drawSize>
+            <color>(1.0, 1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <uiIconPath>UI/SandFootballPitch_UI</uiIconPath>
+        <costList>
+            <Cloth>100</Cloth>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <Mass>8</Mass>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="AbstractFootballPitch">
+        <defName>ConcreteFootballPitch</defName>
+        <label>Concrete Football Pitch</label>
+        <description>Possibly the most dangerous football surface, street football is not for the faint of heart.</description>
+        <graphicData>
+            <texPath>Things/ConcreteFootballPitch</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(13,7)</drawSize>
+            <color>(1.0, 1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <uiIconPath>UI/ConcreteFootballPitch_UI</uiIconPath>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <Mass>8</Mass>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="AbstractFootballPitch">
+        <defName>WoodFootballPitch</defName>
+        <label>Wooden Football Pitch</label>
+        <description>Almost always placed indoors, this football pitch surface was popular in old earth school gymnasiums where it provided football, basketball, tennis and even a location for the horrible experience known as "exams".</description>
+        <graphicData>
+            <texPath>Things/WoodFootballPitch</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(13,7)</drawSize>
+            <color>(1.0, 1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <uiIconPath>UI/WoodFootballPitch_UI</uiIconPath>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <Mass>8</Mass>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="AbstractFootballPitch">
+        <defName>GrassFootballPitch</defName>
+        <label>Grass Football Pitch</label>
+        <description>The pinacle of football pitch surfaces, classic grass, water it for the perfect passing surface.</description>
+        <graphicData>
+            <texPath>Things/GrassFootballPitch</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(13,7)</drawSize>
+            <color>(1.0, 1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <uiIconPath>UI/GrassFootballPitch_UI</uiIconPath>
+        <costList>
+            <Hay>500</Hay>
+        </costList>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>10</Beauty>
+            <Mass>8</Mass>
+            <JoyGainFactor>2.5</JoyGainFactor>
+        </statBases>
+    </ThingDef>
+</Defs>

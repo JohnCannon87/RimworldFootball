@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rimball</name>
+	<author>Arcjc007</author>
+	<packageId>Arcjc007.Rimball</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<description><![CDATA[
+	Adds a football pitch to the game, the pitch is a Joy type that allows your pawns to practice playing football !
+	]]>
+	</description>
+</ModMetaData>
