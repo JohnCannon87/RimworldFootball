@@ -116,28 +116,16 @@ namespace Rimball
 
                 cells.Shuffle(); // Shuffle the cells to randomize the selection
 
-                int tries = 0;
-                IntVec3 randomCell;
-                int maxTries = cells.Count();
-
-                do
+                foreach (IntVec3 cell in cells)
                 {
-                    randomCell = cells[tries];
-                    tries++;
-                    if (tries > maxTries)
+                    if(actor.CanReserve(cell) || actor.CanReach(cell, PathEndMode.OnCell, Danger.Deadly))
                     {
-                        Log.Error($"{actor} could not find a suitable cell within the defined list of player positions.");
-                        actor.jobs.curDriver.EndJobWith(JobCondition.Errored);
+                        curJob.SetTarget(cellInd, cell);
                         return;
                     }
-
-                    //jcLog.Message($"[FindRandomCellInArea] Trying cell {randomCell}");
-
                 }
-                while (!actor.CanReserve(randomCell) || !actor.CanReach(randomCell, PathEndMode.OnCell, Danger.Deadly));
-
-                //jcLog.Message($"[FindRandomCellInArea] Found valid cell {randomCell}");
-                curJob.SetTarget(cellInd, randomCell);
+                actor.jobs.curDriver.EndJobWith(JobCondition.Errored);
+                return;
             };
 
             return findCell;

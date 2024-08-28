@@ -13,7 +13,7 @@ namespace Rimball
 
             if (t.HasComp<Comp_SportPitch>())
             {
-                //jcLog.Message("[JoyGiver_PracticeFootball] Thing has Comp_SportPitch.");
+                //jcLog.Message($"[JoyGiver_PracticeFootball] Thing has Comp_SportPitch. with pawn {pawn.Name} ");
 
                 Comp_SportPitch comp_SportPitch = t.TryGetComp<Comp_SportPitch>();
 
@@ -35,7 +35,7 @@ namespace Rimball
 
                     //jcLog.Message($"[JoyGiver_PracticeFootball] Checking cell: {cell} | Standable: {isStandable} | Thing Forbidden: {isThingForbidden} | Cell Forbidden: {isCellForbidden} | Reserved: {isReserved} | Can Reserve: {canReserve}");
 
-                    if (isStandable && !isThingForbidden && !isCellForbidden && !isReserved && canReserve)
+                    if (!pawn.IsPrisoner && isStandable && !isThingForbidden && !isCellForbidden && !isReserved && canReserve)
                     {
                         //jcLog.Message($"[JoyGiver_PracticeFootball] Assigning job to pawn {pawn.Name} at cell {cell}");
                         return JobMaker.MakeJob(def.jobDef, t, cell);
