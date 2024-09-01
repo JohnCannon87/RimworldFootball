@@ -5,7 +5,7 @@
   <JoyGiverDef>
     <defName>Practice_Football</defName>
     <giverClass>Rimball.JoyGiver_PracticeFootball</giverClass>
-    <baseChance>4.5</baseChance>
+    <baseChance>5</baseChance>
     <thingDefs>
       <li>DustFootballPitch</li>
       <li>SandFootballPitch</li>
