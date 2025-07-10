@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- dexterity play -->
+
+  <JoyGiverDef>
+    <defName>Practice_Football</defName>
+    <giverClass>Rimball.JoyGiver_PracticeFootball</giverClass>
+    <baseChance>5</baseChance>
+    <thingDefs>
+      <li>DustFootballPitch</li>
+      <li>SandFootballPitch</li>
+      <li>ConcreteFootballPitch</li>
+      <li>WoodFootballPitch</li>
+      <li>GrassFootballPitch</li>
+    </thingDefs>
+    <jobDef>Practice_Football</jobDef>
+    <desireSit>false</desireSit>
+    <joyKind>Gaming_Football</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+</Defs>

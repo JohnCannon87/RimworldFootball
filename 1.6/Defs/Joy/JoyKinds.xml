@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--======================= Building use =======================-->
+
+  <JoyKindDef>
+    <defName>Gaming_Football</defName>
+    <label>football play</label>
+  </JoyKindDef>
+  
+</Defs>
